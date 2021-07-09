@@ -14,7 +14,7 @@ const Card = ({ brewery }) => {
       <div className="p-4 sm:min-h-[18rem]">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold ">
           <Link href={`/breweries/${brewery.id}`}>
-            <a>{brewery.name}</a>
+            <a className="hover:text-blue-600">{brewery.name}</a>
           </Link>
         </h2>
         <address className="mt-8 not-italic">
