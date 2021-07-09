@@ -1,8 +1,8 @@
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import Card from '../components/Card'
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <div className="text-gray-700">
       <Header />
@@ -16,6 +16,8 @@ export default function Home({ data }) {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   )
 }
@@ -31,6 +33,6 @@ export async function getStaticProps() {
   }
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { data },
   }
 }
