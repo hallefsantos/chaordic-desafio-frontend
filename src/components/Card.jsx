@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Card = ({ brewery }) => {
   const typeColors = {
     micro: 'bg-green-500',
@@ -11,7 +13,9 @@ const Card = ({ brewery }) => {
     <div className="shadow-lg border border-gray-100 rounded">
       <div className="p-4 sm:min-h-[18rem]">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold ">
-          {brewery.name}
+          <Link href={`/breweries/${brewery.id}`}>
+            <a>{brewery.name}</a>
+          </Link>
         </h2>
         <address className="mt-8 not-italic">
           {brewery.street} <br />
