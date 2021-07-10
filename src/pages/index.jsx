@@ -1,7 +1,7 @@
+import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import Card from '../components/Card'
 import Button from '../components/Button'
-import { useRouter } from 'next/router'
 
 export default function Home({ breweries, type, page }) {
   const router = useRouter()

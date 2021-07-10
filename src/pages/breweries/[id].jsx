@@ -1,9 +1,13 @@
-import Layout from '../../components/Layout'
 import Link from 'next/link'
+import Head from 'next/head'
+import Layout from '../../components/Layout'
 
 const Brewery = ({ brewery }) => {
   return (
     <Layout>
+      <Head>
+        <title>{brewery.name} | Breweries</title>
+      </Head>
       <main className="flex-1 pb-2 flex items-center">
         <div className="w-full max-w-7xl mx-auto px-4">
           <div className="py-3">
