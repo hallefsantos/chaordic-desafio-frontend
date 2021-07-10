@@ -33,7 +33,7 @@ export default function Home({ breweries, type, page }) {
                 className="w-full py-1 px-2 capitalize cursor-pointer appearance-none bg-white border border-gray-100"
                 onChange={(e) => setNewTypeUrl(e.target.value)}
               >
-                <option>All</option>
+                <option value="">All</option>
                 {breweriesTypes.map(type => (
                   <option key={type}>{type}</option>
                 ))}
